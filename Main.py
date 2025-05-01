@@ -1,10 +1,6 @@
 import pandas
 import Materias
 
-
-
-
-
 if __name__ == "__main__":
      pass
 '''

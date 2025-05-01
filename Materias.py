@@ -7,8 +7,8 @@ class Materia:
         self.horarios = horarios
         self.precedencia = precedencia
 
- #   def __str__(self):
- #       return f"{self.nome} | Créditos: {self.creditos} | Horários: {', '.join(self.horarios)} | Dias: {', '.join(self.dias)}"
+    def __str__(self):
+        return f"{self.nome} | Créditos: {self.creditos} | Horários: {', '.join(self.horarios)} | Dias: {', '.join(self.dias)}"
 
 # Matérias pré-criadas (note que a ordem dos parâmetros agora segue a do __init__)
 CALCULOI = Materia(
@@ -137,11 +137,11 @@ EQUACOES = Materia(
     precedencia="Cálculo II"
 )
 
-SINAIS_E_SISTEMA = Materia(
+SINAIS_E_SISTEMAS = Materia(
     creditos=2,
     dias=["Segunda"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
-    nome="Equações Diferencias",
+    nome="Sinais e Sistemas",
     precedencia="Equações Diferenciais"
 )
 
@@ -366,7 +366,7 @@ OPTATIVAIII = Materia(
     creditos=2,
     dias=["Sexta"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
-    nome="Optativa II",
+    nome="Optativa III",
     precedencia="nenhuma"
 )
 
@@ -417,7 +417,7 @@ engenharia_eletrica = {
     1: [CALCULOI, FISICAI, GEOMETRIA, INTRODUCAO, PROGRAMACAO],
     2: [CALCULOII, FISICAII, ALGEBRA, QUIMICA, EXPRESSAO],
     3: [CALCULOIII, FISICAIII, CIRCUITOS, ELETRONICA, METODOLOGIA],
-    4: [EQUACOES, SINAIS_E_SISTEMA, INSTRUMENTACAO, ELETROMAGNETISMO, PROBABILIDADE],
+    4: [EQUACOES, SINAIS_E_SISTEMAS, INSTRUMENTACAO, ELETROMAGNETISMO, PROBABILIDADE],
     5: [ELETRONICA_ANALOGA, ELETRONICA_DIGITAL, CIRCUITOSII, CONTROLE_LINEAR],
     6: [MICROCRONTROLADORES, MAQUINAS_ELETRICASI, INSTALACOES, FENOMENOS_DE_TRANSPORTE],
     7: [COMUNICACOES_ANALOGAS, PROCESSAMENTO_SINAIS, AUTOMACAO_INDUSTRIAL, GESTAO_PROJETOS],
@@ -441,4 +441,3 @@ for semestre, materias in engenharia_eletrica.items():
         })
 
 df = pandas.DataFrame(dados)
-print(df)
