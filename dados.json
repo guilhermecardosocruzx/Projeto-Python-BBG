@@ -1,0 +1,19 @@
+{
+    "aluno": "gui",
+    "ra": 250959,
+    "creditos": 20,
+    "materias_cursadas": [
+        "Cálculo I",
+        "Física I",
+        "Geometria Analítica",
+        "Introdução à Engenharia",
+        "Programação",
+        "Cálculo II",
+        "Física II",
+        "Álgebra Linear",
+        "Química Geral",
+        "Expressão Gráfica"
+    ],
+    "dia_livre": [],
+    "periodo": "manhã"
+}
