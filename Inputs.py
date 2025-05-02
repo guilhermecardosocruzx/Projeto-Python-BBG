@@ -14,8 +14,15 @@ periodo = []
 periodo_all = ["manhã", "tarde", "noite", "integral"]
 dias_semana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
 
-######### AQUI É A LISTA ONDE SAIRÁ TODOS OS DADOS ATENÇÃO AQUI 
-dados = [aluno, ra, creditos, materias_cursadas, dia_livre, periodo]
+# Dicionário com as informações do aluno
+dados_dict = {
+            "aluno": aluno,
+            "ra": ra,
+            "creditos": creditos,
+            "materias_cursadas": materias_cursadas,
+            "dia_livre": dia_livre,
+            "periodo": periodo
+        }
 
 st.title("Planejador de Grade Universidade")
 
@@ -44,15 +51,6 @@ periodo = st.selectbox("Em qual período você estuda?", periodo_all)
 # botão de confirmação
 if st.button("Enviar"):
     if aluno and ra and periodo:
-        dados_dict = {
-            "aluno": aluno,
-            "ra": ra,
-            "creditos": creditos,
-            "materias_cursadas": materias_cursadas,
-            "dia_livre": dia_livre,
-            "periodo": periodo
-        }
-
         with open("dados.json", "w", encoding="utf-8") as f:
             json.dump(dados_dict, f, ensure_ascii=False, indent=4)
 
