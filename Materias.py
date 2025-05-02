@@ -61,7 +61,7 @@ FISICAIII = Materia(
     creditos=2,
     dias=["Terça"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
-    nome="Física II",
+    nome="Física III",
     precedencia="Física II"
 )
 

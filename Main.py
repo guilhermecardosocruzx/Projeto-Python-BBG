@@ -1,12 +1,13 @@
 import pandas as pd
-from Materias import df
 import json
 
 def engenharia_eletrica(dados_aluno):
+
     """
     Gera uma grade com o maior número possível de matérias dentro do limite de créditos,
     respeitando:
     - Dias livres
+    - (Semestre)
     - Precedências
     - Conflitos de horário
     - Compatibilidade com o período (manhã, tarde, noite, integral)

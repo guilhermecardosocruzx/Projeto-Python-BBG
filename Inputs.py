@@ -37,7 +37,7 @@ for semestre, materias in engenharia_eletrica.items():
 
 # informações do aluno
 st.header("Digite seus dados")
-aluno = st.text_input("Nome do aluno:")
+aluno = st.text_input("Nome do aluno:").upper()
 ra = st.number_input("RA do aluno:", step=1)
 
 # parâmetros do aluno
