@@ -1,16 +1,19 @@
 {
-    "aluno": "13556",
-    "ra": -98,
-    "creditos": 20,
+    "aluno": "CAUO",
+    "ra": 2222,
+    "creditos": 25,
     "materias_cursadas": [
         "Cálculo I",
         "Física I",
         "Geometria Analítica",
         "Introdução à Engenharia",
-        "Programação",
-        "Instrumentação",
-        "Gestão de Projetos"
+        "Programação"
     ],
-    "dia_livre": [],
-    "periodo": "integral"
+    "dia_livre": [
+        "Segunda",
+        "Quarta",
+        "Quinta",
+        "Sexta"
+    ],
+    "periodo": "tarde"
 }
