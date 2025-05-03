@@ -1,17 +1,16 @@
 {
-    "aluno": "Gustavo Mazini ",
-    "ra": 5,
+    "aluno": "13556",
+    "ra": -98,
     "creditos": 20,
     "materias_cursadas": [
         "Cálculo I",
         "Física I",
         "Geometria Analítica",
+        "Introdução à Engenharia",
         "Programação",
-        "Cálculo II",
-        "Física II",
-        "Álgebra Linear",
-        "Química Geral"
+        "Instrumentação",
+        "Gestão de Projetos"
     ],
     "dia_livre": [],
-    "periodo": "manhã"
+    "periodo": "integral"
 }

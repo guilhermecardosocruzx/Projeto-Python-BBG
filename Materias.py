@@ -134,7 +134,7 @@ EQUACOES = Materia(
     dias=["Segunda"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
     nome="Equações Diferencias",
-    precedencia="Cálculo II"
+    precedencia="Cálculo III"
 )
 
 SINAIS_E_SISTEMAS = Materia(
@@ -161,11 +161,11 @@ ELETROMAGNETISMO = Materia(
     precedencia="Fisica III"
 )
 
-ELETRONICA_ANALOGA = Materia(
+ELETRONICA_ANALOGICA = Materia(
     creditos=2,
     dias=["Terça"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
-    nome="Eletrônica Análoga",
+    nome="Eletrônica Analógica",
     precedencia="Circuitos Elétricos I"
 )
 
@@ -175,7 +175,7 @@ ELETRONICA_DIGITAL = Materia(
     dias=["Terça"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
     nome="Eletromagnetismo",
-    precedencia="Eletrônica Análoga"
+    precedencia="Eletrônica Analógica"
 )
 
 CIRCUITOSII= Materia(
@@ -242,12 +242,12 @@ FENOMENOS_DE_TRANSPORTE = Materia(
     nome="Fenômenos de Transporte",
     precedencia="Física II"
 )
-COMUNICACOES_ANALOGAS = Materia(
+COMUNICACOES_ANALOGICAS = Materia(
     creditos=2,
     dias=["Sexta"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
-    nome="Comunicações Análogas",
-    precedencia="Eletrônica análoga"
+    nome="Comunicações Analógicas",
+    precedencia="Eletrônica analógica"
 )
 
 PROCESSAMENTO_SINAIS = Materia(
@@ -310,8 +310,8 @@ ELETRONICA_POTENCIA= Materia(
     creditos=2,
     dias=["Quarta"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
-    nome="Eletrônica de Controle",
-    precedencia="Eletrônica análoga"
+    nome="Eletrônica de Potência",
+    precedencia="Eletrônica analógica"
 )
 
 TCCI= Materia(
@@ -319,7 +319,7 @@ TCCI= Materia(
     dias=["Quarta"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
     nome="Trabalho de conclusão de curso I",
-    precedencia="nenhum"
+    precedencia="nenhuma"
 )
 
 ENERGIA= Materia(
@@ -418,9 +418,9 @@ engenharia_eletrica = {
     2: [CALCULOII, FISICAII, ALGEBRA, QUIMICA, EXPRESSAO],
     3: [CALCULOIII, FISICAIII, CIRCUITOS, ELETRONICA, METODOLOGIA],
     4: [EQUACOES, SINAIS_E_SISTEMAS, INSTRUMENTACAO, ELETROMAGNETISMO, PROBABILIDADE],
-    5: [ELETRONICA_ANALOGA, ELETRONICA_DIGITAL, CIRCUITOSII, CONTROLE_LINEAR],
+    5: [ELETRONICA_ANALOGICA, ELETRONICA_DIGITAL, CIRCUITOSII, CONTROLE_LINEAR],
     6: [MICROCRONTROLADORES, MAQUINAS_ELETRICASI, INSTALACOES, FENOMENOS_DE_TRANSPORTE],
-    7: [COMUNICACOES_ANALOGAS, PROCESSAMENTO_SINAIS, AUTOMACAO_INDUSTRIAL, GESTAO_PROJETOS],
+    7: [COMUNICACOES_ANALOGICAS, PROCESSAMENTO_SINAIS, AUTOMACAO_INDUSTRIAL, GESTAO_PROJETOS],
     8: [CONVERSAO_ENERGIA, SISTEMAS_POTENCIAS, ETICA_LEGISLACAO, SISTEMAS_DE_CONTROLE],
     9: [ELETRONICA_POTENCIA, TCCI, ENERGIA, PROJETO],
     10: [PROJETOII, OPTATIVAI, OPTATIVAII, OPTATIVAIII, ESTAGIO, TCCII, EMPREENDEDORISMO, DESENHO_TECNICO, OPTATIVAIV],
