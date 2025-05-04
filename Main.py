@@ -13,11 +13,11 @@ if __name__ == "__main__":
             dados_aluno = json.load(f)
 
         print("✅ Dados recebidos do aluno:")
-
-        grid.monta_grade(dados_aluno)
-        output()
         for chave, valor in dados_aluno.items():
             print(f"{chave}: {valor}")
+
+        grade = grid.monta_grade(dados_aluno)
+        
 
     except FileNotFoundError:
         #Se nenhum arquivo for encontrado a mensagem abaixo é lançada
