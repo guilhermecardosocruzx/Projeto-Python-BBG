@@ -31,14 +31,14 @@ CALCULOII = Materia(
     dias=["Segunda"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
     nome="Cálculo II",
-    precedencia="Calculo I"
+    precedencia="Cálculo I"
 )
 CALCULOIII = Materia(
     creditos=2,
     dias=["Segunda"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
     nome="Cálculo III",
-    precedencia="Calculo II"
+    precedencia="Cálculo II"
 )
 
 FISICAI = Materia(
@@ -158,7 +158,7 @@ ELETROMAGNETISMO = Materia(
     dias=["Terça"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
     nome="Eletromagnetismo",
-    precedencia="Fisica III"
+    precedencia="Física III"
 )
 
 ELETRONICA_ANALOGICA = Materia(
@@ -208,7 +208,7 @@ MAQUINAS_ELETRICASI= Materia(
     dias=["Quinta"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
     nome="Máquinas Elétricas I",
-    precedencia="Eletrônica básica"
+    precedencia="Eletrônica Básica"
 )
 
 MAQUINAS_ELETRICASII= Materia(
@@ -247,7 +247,7 @@ COMUNICACOES_ANALOGICAS = Materia(
     dias=["Sexta"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
     nome="Comunicações Analógicas",
-    precedencia="Eletrônica analógica"
+    precedencia="Eletrônica Analógica"
 )
 
 PROCESSAMENTO_SINAIS = Materia(
@@ -318,7 +318,7 @@ TCCI= Materia(
     creditos=2,
     dias=["Quarta"],
     horarios=["08:00-10:00", "14:00-16:00", "19:00-21:00"],
-    nome="Trabalho de conclusão de curso I",
+    nome="Trabalho de Conclusão de Curso I",
     precedencia="nenhuma"
 )
 

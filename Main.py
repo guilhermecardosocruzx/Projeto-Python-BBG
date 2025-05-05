@@ -1,5 +1,5 @@
 import pandas
-from Inputs import inputs, output
+from canva import inputs, output
 import streamlit as st
 import grid
 import json
@@ -7,6 +7,7 @@ import json
 if __name__ == "__main__":
 
     inputs()
+    
     #Primeiro é feito um try para saber se dentro da pasta existe o arquivo dados.json criado pelos inputs
     try:
         with open("dados.json", "r", encoding="utf-8") as f:
@@ -15,7 +16,7 @@ if __name__ == "__main__":
         print("✅ Dados recebidos do aluno:")
 
         grid.monta_grade(dados_aluno)
-        output()
+
         for chave, valor in dados_aluno.items():
             print(f"{chave}: {valor}")
 

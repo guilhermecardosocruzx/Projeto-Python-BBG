@@ -1,5 +1,6 @@
 import streamlit as st
 from Materias import engenharia_eletrica
+import grid
 import pandas 
 import json
 
@@ -83,7 +84,30 @@ def output():
 
     # Transformar em DataFrame (usando .items() se for um dicionário simples)
     df = pandas.DataFrame([dados])  # [] garante que cada entrada seja uma linha
+    grade = grid.monta_grade(dados)
+    df_grade = pandas.DataFrame(grade)
+
+    # Convertendo o df para um formato de grade de horários
+    # Define os dias da semana e os horários que podem aparecer
+    dias_semana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"]
+    horarios_possiveis = ["08:00-10:00", "14:00-16:00", "19:00-21:00"]
+
+    # Cria um DataFrame vazio com os horários como índice e os dias como colunas
+    tabela_horarios = pandas.DataFrame(index=horarios_possiveis, columns=dias_semana).fillna("")
+
+    # Preenche a grade com os nomes das matérias
+    for _, row in df_grade.iterrows():
+        nome = row["Nome"]
+        dias = row["Dias"]
+        horarios = row["Horários"]
+        for dia, horario in zip(dias, horarios):
+            if dia in tabela_horarios.columns and horario in tabela_horarios.index:
+                tabela_horarios.at[horario, dia] = nome
+
+    # Exibe a tabela de horários
+    #print(tabela_horarios)
 
     # Exibir no Streamlit
     st.header("Dados do Aluno")
     st.dataframe(df, hide_index=1)
+    st.dataframe(tabela_horarios)
